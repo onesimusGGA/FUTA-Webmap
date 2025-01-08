@@ -5,10 +5,12 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
     <link rel="stylesheet" href="leaflet-search-master\leaflet-search-master\dist\leaflet-search.src.css" />
     <link rel="stylesheet" href="leaflet-routing-machine-3.2.12\leaflet-routing-machine-3.2.12\dist\leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="leaflet-locatecontrol-gh-pages\leaflet-locatecontrol-gh-pages\dist\L.Control.Locate.min.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     <script src="leaflet-search-master\leaflet-search-master\dist\leaflet-search.src.js"></script>
     <script src="leaflet-routing-machine-3.2.12\leaflet-routing-machine-3.2.12\dist\leaflet-routing-machine.js"></script>
+    <script src="leaflet-locatecontrol-gh-pages\leaflet-locatecontrol-gh-pages\dist\L.Control.Locate.min.js"></script>
     <script src="Building.js"></script>
     <script src="Boundary.js"></script>
     <script src="Location.js"></script>
@@ -80,10 +82,7 @@
 
         map.addControl(searchControl);
 
-
-        var marker = L.marker({
-            
-        })
+        L.control.locate().addTo(map);
 
     </script>
 </body>
